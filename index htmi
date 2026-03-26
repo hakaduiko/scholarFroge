@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b2a4a" />
+  <meta name="description" content="ScholarForge Academy - Physics, Chemistry, Maths (Basic to Advanced). Classes 9-12. 3-Day Free Trial." />
+
+  <title>ScholarForge Academy</title>
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">SF</div>
+      <div>
+        <div class="brand-name">ScholarForge</div>
+        <div class="brand-sub">Academy</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#courses">Courses</a>
+      <a href="#summer">Summer Class</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn primary" href="tel:8602418753">Call: 8602418753</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="badge">3-Day Free Trial</p>
+          <h1>Physics, Chemistry & Maths<br><span>(Basic to Advanced)</span></h1>
+
+          <p class="hero-desc">
+            Classes for <strong>9th, 10th, 11th, 12th</strong>. Weekly special tests and parent monitoring.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Start Free Trial</a>
+            <a class="btn ghost" href="https://wa.me/918602418753" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+
+          <div class="highlights">
+            <div class="card">Classes: <strong>9 | 10 | 11 | 12</strong></div>
+            <div class="card">Special Summer Classes for <strong>Board Fail & Supplementary</strong></div>
+            <div class="card">Weekly Special Tests + <strong>Parent Monitoring</strong></div>
+            <div class="card"><strong>Guarantee</strong> to Pass Boards</div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Put your banner image here -->
+          <div class="banner-box">
+            <p class="small-muted">Add your banner image as: <code>images/banner.png</code></p>
+            <img class="banner-img" src="images/banner.png" alt="ScholarForge Banner" />
+          </div>
+
+          <div class="teacher">
+            <p class="teacher-title">Pro. Sharad Soni Sir</p>
+            <p class="small-muted">Personal guidance, concept clarity, and exam-focused preparation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section">
+      <h2>Courses</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>Class 9 Foundation</h3>
+          <p>Strong basics, concept building, and problem practice.</p>
+        </div>
+        <div class="box">
+          <h3>Class 10 Boards</h3>
+          <p>Syllabus coverage, revision, and test series.</p>
+        </div>
+        <div class="box">
+          <h3>Class 11 Advanced</h3>
+          <p>Deep concepts, numericals, and weekly tests.</p>
+        </div>
+        <div class="box">
+          <h3>Class 12 Boards + Prep</h3>
+          <p>Board-focused strategy, practice papers, and monitoring.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMER -->
+    <section id="summer" class="section alt">
+      <h2>Special Summer Classes</h2>
+      <p>
+        For <strong>Board Fail</strong> and <strong>Supplementary</strong> students; fast revision + focused practice + guidance.
+      </p>
+      <ul class="list">
+        <li>Targeted syllabus completion plan</li>
+        <li>Weekly tests and improvement tracking</li>
+        <li>Parent updates for monitoring</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="box">
+          <h3>Call / WhatsApp</h3>
+          <p><strong>8602418753</strong></p>
+          <div class="row">
+            <a class="btn primary" href="tel:8602418753">Call Now</a>
+            <a class="btn ghost" href="https://wa.me/918602418753" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Address</h3>
+          <p class="small-muted">
+            Add your city/address here.<br />
+            (Tell me your city and address and I will update it.)
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky buttons -->
+  <div class="sticky">
+    <a class="sticky-btn" href="tel:8602418753">Call</a>
+    <a class="sticky-btn" href="https://wa.me/918602418753" target="_blank" rel="noreferrer">WhatsApp</a>
+  </div>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> ScholarForge Academy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js"));
+    }
+  </script>
+</body>
+</html>
